@@ -3,6 +3,7 @@ import { gsap } from "gsap";
 
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import Drawer from "./Drawer";
 const NavBar = () => {
   //   const NavMenu = (
@@ -93,11 +94,24 @@ const NavBar = () => {
     </>
   );
 
+  const [scrollActive, setScrollActive] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScrollActive(window.scrollY > 20);
+    });
+  }, []);
+
   return (
-    <div>
-      <div className="navbar px-5">
-        <div className="navbar-start">
-          <div className="dropdown">
+    <div className=" ">
+      <header
+        className={
+          "fixed top-0 w-screen   z-40 bg-white-500 transition-all " +
+          (scrollActive ? "  pt-0 border-b-2 border-gray-500" : " pt-4")
+        }
+      >
+        <div className="navbar z-40 px-5 bg-white top-0  px-20   top-0">
+          <div className="navbar-start">
+            {/* <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -122,37 +136,38 @@ const NavBar = () => {
             >
               {NavMenu}
             </ul>
+          </div> */}
+            <Image src="/axtra-logo.webp" alt=" logo" width={180} height={38} />
           </div>
-          <Image src="/axtra-logo.webp" alt=" logo" width={180} height={38} />
-        </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 text-xl gap-10">
-            {NavMenu}
-          </ul>
-        </div>
-        <div className="navbar-end ">
-          <button className="btn btn-ghost btn-circle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-              />
-            </svg>
-          </button>
-          {/* <a className="btn">Button</a> */}
-          <div>
-            <Drawer />
+          <div className="navbar-center hidden lg:flex">
+            <ul className="menu menu-horizontal px-1 text-xl gap-10">
+              {NavMenu}
+            </ul>
+          </div>
+          <div className="navbar-end ">
+            <button className="btn btn-ghost btn-circle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+            </button>
+            {/* <a className="btn">Button</a> */}
+            <div>
+              <Drawer />
+            </div>
           </div>
         </div>
-      </div>
+      </header>
     </div>
   );
 };
