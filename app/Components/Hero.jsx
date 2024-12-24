@@ -22,7 +22,7 @@ const Hero = () => {
     );
   }, []);
   return (
-    <div className=" mx-auto pt-40">
+    <div className=" mx-auto pt-40 bg-shape ">
       <div className="max-w-screen-2xl mx-auto px-10">
         <h1 className="text-2xl font-bold">DIGITAl</h1>
         <h1
