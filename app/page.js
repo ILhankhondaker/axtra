@@ -1,6 +1,7 @@
 import { Brand } from "./Components/Brand";
 import Explore from "./Components/Explore";
 import Hero from "./Components/Hero";
+import Pricing from "./Components/Pricing";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Brand />
       <Explore />
+      <Pricing />
     </>
   );
 }

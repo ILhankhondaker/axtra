@@ -91,7 +91,7 @@ const Footer = () => {
             <span
               key={index}
               ref={(el) => (textRefs.current[index] = el)}
-              className="text-5xl lg:text-8xl font-black uppercase py-5 bg-gradient-to-r from-pink-500 to-yellow-500 bg-clip-text text-transparent "
+              className="text-5xl  lg:text-7xl font-black uppercase py-5 bg-gradient-to-r from-pink-500 to-yellow-500 bg-clip-text text-transparent "
             >
               {word}
             </span>
