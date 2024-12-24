@@ -10,6 +10,7 @@ const Pricing = () => {
             <h1 className="text-5xl lg:text-7xl font-bold uppercase my-5">
               Be kind to your mind
             </h1>
+            {/* Collaps item  */}
             <div className="my-10">
               <div
                 tabIndex={0}
@@ -27,6 +28,7 @@ const Pricing = () => {
                   </p>
                 </div>
               </div>
+
               <div
                 tabIndex={0}
                 className="collapse collapse-plus border-b rounded-none border-base-300 bg-[#f3ecec] "
@@ -59,6 +61,7 @@ const Pricing = () => {
                   </p>
                 </div>
               </div>
+
               <div
                 tabIndex={0}
                 className="collapse collapse-plus border-b rounded-none border-base-300 bg-[#f3ecec] "
@@ -78,7 +81,7 @@ const Pricing = () => {
             </div>
           </div>
           <div className="text-center lg:text-left">
-            {/* card black */}
+            {/* pricing card black */}
             <div className="indicator ">
               <span className="indicator-item indicator-top indicator-end-80% badge bg-[#ff9776] text-white border-none p-3 rounded-sm mr-20">
                 Best Value
@@ -100,7 +103,7 @@ const Pricing = () => {
                 </h1>
               </div>
             </div>
-            {/* card whie  */}
+            {/*pricing card whie  */}
             <div className=" ">
               <div className="grid  grid-cols-6 w-auto max-w-sm lg:max-w-2xl   bg-white text-black my-5   rounded-lg shadow-lg p-10">
                 <IoIosCheckboxOutline className="text-5xl rounded text-gray-500  " />

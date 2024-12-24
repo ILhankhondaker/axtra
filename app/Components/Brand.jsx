@@ -25,6 +25,8 @@ export const Brand = () => {
       { opacity: 1, y: 0, duration: 2.5, ease: "power3.out" }
     );
   }, []);
+
+  // all brand logo in an arry
   const images = [
     "/brand1.webp",
     "/brand2.webp",

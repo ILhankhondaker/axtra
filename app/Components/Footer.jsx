@@ -80,11 +80,13 @@ const Footer = () => {
           </h6>
         </div>
         <nav className="uppercase ">
-          <h6 className="text-center">Facebook</h6>
+          <h6 className="text-center border border-gray-500 p-5 w-28">
+            Facebook
+          </h6>
 
-          <a className="">Twitter</a>
-          <a className="">linkedin</a>
-          <a className="">instagram</a>
+          <a className="border border-gray-500 p-5 w-28">Twitter</a>
+          <p className="border border-gray-500 p-5  w-28">linkedin</p>
+          <a className="border border-gray-500 p-5 w-28">instagram</a>
         </nav>
         <div style={styles.container}>
           {["let's", "talk"].map((word, index) => (

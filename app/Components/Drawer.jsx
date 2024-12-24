@@ -31,6 +31,8 @@ const Drawer = () => {
         ></label>
         <ul className="menu bg-black text-base-content grid grid-cols-1 gap-y-48 content-center  min-h-full w-80 p-4 z-40">
           {/* Sidebar content here */}
+
+          {/* logo */}
           <Image
             src="/site-logo-white.webp"
             alt=" logo"

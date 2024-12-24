@@ -22,6 +22,7 @@ const Services = () => {
         </div>
       </div>
 
+      {/* Services items  */}
       <div className="grid justify-items-center border-y   lg:grid-cols-3   py-10">
         <h1 className="text-3xl font-bold uppercase">
           Search Engine <br /> Optimization

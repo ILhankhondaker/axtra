@@ -1,3 +1,4 @@
+import BottomToTop from "./Components/BottomToTop";
 import { Brand } from "./Components/Brand";
 import Explore from "./Components/Explore";
 import Hero from "./Components/Hero";
@@ -12,6 +13,7 @@ export default function Home() {
       <Explore />
       <Services />
       <Pricing />
+      <BottomToTop />
     </>
   );
 }

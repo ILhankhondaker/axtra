@@ -62,7 +62,7 @@ const NavBar = () => {
           (scrollActive ? "  pt-0 border-b-2 " : " pt-0")
         }
       >
-        <div className="navbar z-40 px-5 bg-white top-0  px-20   top-0">
+        <div className="navbar z-40  bg-white top-0  px-20   top-0">
           <div className="navbar-start">
             <Image src="/axtra-logo.webp" alt=" logo" width={180} height={38} />
           </div>
@@ -88,7 +88,7 @@ const NavBar = () => {
                 />
               </svg>
             </button>
-            {/* <a className="btn">Button</a> */}
+
             <div>
               <Drawer />
             </div>
