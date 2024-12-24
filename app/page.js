@@ -2,6 +2,7 @@ import { Brand } from "./Components/Brand";
 import Explore from "./Components/Explore";
 import Hero from "./Components/Hero";
 import Pricing from "./Components/Pricing";
+import Services from "./Components/Services";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Hero />
       <Brand />
       <Explore />
+      <Services />
       <Pricing />
     </>
   );

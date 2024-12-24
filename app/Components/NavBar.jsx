@@ -59,7 +59,7 @@ const NavBar = () => {
       <header
         className={
           "fixed top-0 w-screen   z-40 bg-white-500 transition-all " +
-          (scrollActive ? "  pt-0 border-b-2 border-gray-500" : " pt-0")
+          (scrollActive ? "  pt-0 border-b-2 " : " pt-0")
         }
       >
         <div className="navbar z-40 px-5 bg-white top-0  px-20   top-0">
