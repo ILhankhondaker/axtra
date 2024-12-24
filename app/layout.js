@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import Footer from "./Components/Footer";
 import NavBar from "./Components/NavBar";
 import "./globals.css";
 
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
       >
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );

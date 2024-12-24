@@ -6,53 +6,6 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import Drawer from "./Drawer";
 const NavBar = () => {
-  //   const NavMenu = (
-  //     <>
-  //       <li>
-  //         <Link className=" hover:text-white " href="/">
-  //           Home
-  //         </Link>
-  //       </li>
-
-  //       <li>
-  //         {" "}
-  //         <Link className=" hover:text-white  " href="/">
-  //           About
-  //         </Link>
-  //       </li>
-  //       <li>
-  //         {" "}
-  //         <Link className=" hover:text-white  " href="/">
-  //           Pages
-  //         </Link>
-  //       </li>
-  //       <li>
-  //         {" "}
-  //         <Link className=" hover:text-white  " href="/">
-  //           Services
-  //         </Link>
-  //       </li>
-  //       <li>
-  //         {" "}
-  //         <Link className=" hover:text-white  " href="/">
-  //           Team
-  //         </Link>
-  //       </li>
-  //       <li>
-  //         {" "}
-  //         <Link className=" hover:text-white  " href="/">
-  //           Blog
-  //         </Link>
-  //       </li>
-  //       <li>
-  //         {" "}
-  //         <Link className=" hover:text-white  " href="/">
-  //           Contact
-  //         </Link>
-  //       </li>
-  //     </>
-  //   );
-
   const handleMouseEnter = (event) => {
     const spans = event.currentTarget.querySelectorAll("span");
     gsap.to(spans, {

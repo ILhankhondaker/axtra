@@ -9,7 +9,7 @@ const Explore = () => {
           alt=" logo"
           width={280}
           height={238}
-          className="max-w-sm w-80 rounded-lg shadow-2xl"
+          className=" w-80 lg:w-96 max-w-2xl rounded-lg shadow-2xl"
         />
         <div className="p-5 lg:p-20">
           <h1 className="uppercase my-5 font-bold">Who We Are</h1>
