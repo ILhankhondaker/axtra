@@ -2,6 +2,7 @@
 import { gsap } from "gsap";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
+
 export const Brand = () => {
   const imageRefs = useRef([]);
 
@@ -11,7 +12,7 @@ export const Brand = () => {
       opacity: 0,
       y: 50,
       stagger: 0.2, // Delay between each animation
-      duration: 1,
+      duration: 6,
       ease: "power3.out",
     });
   }, []);
@@ -21,7 +22,7 @@ export const Brand = () => {
     gsap.fromTo(
       textRef.current,
       { opacity: 0, y: 50 },
-      { opacity: 1, y: 0, duration: 1.5, ease: "power3.out" }
+      { opacity: 1, y: 0, duration: 2.5, ease: "power3.out" }
     );
   }, []);
   const images = [
@@ -39,7 +40,7 @@ export const Brand = () => {
         We worked with global largest brands
       </h1>
 
-      <div className="grid gap-y-8 gap-x-4  grid-cols-2 md:grid-cols-3 lg:grid-cols-6 z-10">
+      <div className="grid justify-items-center gap-y-8 gap-x-4  grid-cols-2 md:grid-cols-3 lg:grid-cols-6 z-10">
         {images.map((src, index) => (
           <Image
             key={index}
